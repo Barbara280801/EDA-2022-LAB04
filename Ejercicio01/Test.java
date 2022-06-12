@@ -1,6 +1,7 @@
 import java.io.*;
 import java.text.*;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import com.panayotis.gnuplot.GNUPlotParameters;
 import com.panayotis.gnuplot.JavaPlot;
 
