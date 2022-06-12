@@ -1,7 +1,18 @@
+import java.io.*;
+import java.text.*;
 import java.util.*;
 
 public class Test {
     public static void main(String[] args) throws Exception {
+        int CANTIDAD = 10000;
+        long simulacionInicio, simulacionFin, simulacionTotal;
+        long insercionInicio, insercionFin, insercionTotal;
+
+        PrintStream archivo = new PrintStream("insercion.dat");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+
+        System.out.println("Inicio de simulacion: " + dateFormat.format(new Date()));
+        simulacionInicio = System.nanoTime();
 
     }
 
