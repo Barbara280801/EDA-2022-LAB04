@@ -78,7 +78,7 @@ II. SOLUCIÓN DEL CUESTIONARIO
     - Primero se instala [Link](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.3/ "gnuplot") en el sistema del enlace o de la siguiente manera:
 	```sh
 	sudo apt install gnuplot
-    	```
+	```
     - Luego descargar [Link](https://sourceforge.net/projects/gnujavaplot/files/latest/download "gnuplot") del enlace y descomprimirlo en un direcctorio a elección.
     - Finalizar las respectivas implementaciones sin olvidad agregar las respectivas importaciones
 	```java
