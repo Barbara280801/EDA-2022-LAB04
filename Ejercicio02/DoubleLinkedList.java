@@ -1,20 +1,20 @@
 public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
-    Node<E> first;
+    Node<E> raiz;
     int tamano;
 
     public DoubleLinkedList() {
-    	this.first = null;
+    	this.raiz = null;
     	this.tamano = 0; 
     }
     
     @Override
     public boolean isEmpty() {
-    	return this.first == null;
+    	return this.raiz == null;
     }
 
     @Override
     public void insertFirst(E x) {
-    	this.first = new Node<E>(x, null, this.first);
+    	this.raiz = new Node<E>(x, null, this.raiz);
     	tamano++;
     }
 
@@ -23,21 +23,34 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
         if (this.isEmpty()) {
             insertFirst(x);
         } else {
-            Node<E> aux = this.first;
+            Node<E> aux = this.raiz;
             for (; aux.getNext() != null; aux = aux.getNext());
-            aux.setNext(new Node<E>(x));
+            aux.setNext(new Node<E>(x, null, aux));
         }
         tamano++;
     }
 
     @Override
     public boolean search(E x) {
-    	return false;
+    	Node<E> aux = this.raiz;
+    	for (; aux.getNext() != null && !aux.getData().equals(x); aux = aux.getNext());
+        return aux != null;
     }
 
     @Override
-    public void remove(E x) {
-    	
+    public void remove(int ind) {
+        if(ind < tamano) {
+            if(ind == 0) {
+                this.raiz = this.raiz.getNext();
+            	this.raiz.setPreviuos(null);
+            }
+            else {
+                Node<E> anterior = this.get(ind-1);
+                anterior.setNext(this.get(ind+1));
+                anterior.getNext().setPreviuos(anterior);;
+            }
+            tamano--;
+        }
     }
 
     @Override
