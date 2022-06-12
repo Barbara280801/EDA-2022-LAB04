@@ -22,4 +22,11 @@ public class Test {
 		long nano_endTime = System.nanoTime();
 		return nano_endTime - nano_startTime;
 	}
+	public static DoubleLinkedList<Integer> generarPeorCaso(int t){
+		DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+		for (int i = 0; i < t; i++){
+			list.insertFirst(i + 1);
+		}
+		return list;
+	}
 }
