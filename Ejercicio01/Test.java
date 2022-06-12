@@ -6,7 +6,7 @@ import com.panayotis.gnuplot.JavaPlot;
 
 public class Test {
     public static void main(String[] args) throws Exception {
-        int CANTIDAD = 10000;
+        int CANTIDAD = 2000;
         long simulacionInicio, simulacionFin, simulacionTotal;
         long insercionInicio, insercionFin, insercionTotal;
 
