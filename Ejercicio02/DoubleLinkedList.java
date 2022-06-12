@@ -1,6 +1,6 @@
 public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
-    Node<E> raiz;
-    int tamano;
+    private Node<E> raiz;
+    private int tamano;
 
     public DoubleLinkedList() {
     	this.raiz = null;
@@ -14,7 +14,7 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
 
     @Override
     public void insertFirst(E x) {
-    	this.raiz = new Node<E>(x, null, this.raiz);
+    	this.raiz = new Node<E>(x, this.raiz);
     	tamano++;
     }
 
@@ -44,20 +44,26 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
             	this.raiz.setPreviuos(null);
             }
             else {
+            	this.get(ind).setPreviuos(null);
                 Node<E> anterior = this.get(ind-1);
-                anterior.setNext(this.get(ind+1));
-                anterior.getNext().setPreviuos(anterior);;
+                anterior.setNext(this.get(ind).getNext());
+                if (anterior.getNext() != null)
+                	anterior.getNext().setPreviuos(anterior);
             }
             tamano--;
         }
     }
 
+    @Override
     public void insert(E x, int p) {
         if (this.isEmpty() || p == 0) {
             insertFirst(x);
-        } else {
-            Node<E> aux = this.get(p-1);
-            Node<E> nuevo = new Node<E>(x, aux, aux.getNext());
+        } 
+        else if (p >= this.tamano)
+        	insertLast(x);
+        else {
+        	Node<E> aux = this.get(p-1);
+            Node<E> nuevo = new Node<E>(x, aux.getNext(), aux);
             aux.getNext().setPreviuos(nuevo);
             aux.setNext(nuevo);
         }
@@ -75,9 +81,8 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
     public String toString() {
     	String str = "";
         for (Node<E> aux = this.raiz; aux != null; aux = aux.getNext()) {
-            str += aux.toString() + ", ";
+            str += aux.getData() + ", ";
         }
         return str;
     }
-
 }
