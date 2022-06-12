@@ -88,7 +88,7 @@ II. SOLUCIÓN DEL CUESTIONARIO
 	```sh
 	javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java
 	```
-    - Finalmente ejecularla
+    - Finalmente ejecutar
 	```sh
 	java -cp RUTA_A_JAVAPLOT/dist/JavaPlot.jar:. prueba
 	```
