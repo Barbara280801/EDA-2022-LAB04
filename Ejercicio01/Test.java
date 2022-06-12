@@ -1,6 +1,8 @@
 import java.io.*;
 import java.text.*;
 import java.util.*;
+import com.panayotis.gnuplot.GNUPlotParameters;
+import com.panayotis.gnuplot.JavaPlot;
 
 public class Test {
     public static void main(String[] args) throws Exception {
