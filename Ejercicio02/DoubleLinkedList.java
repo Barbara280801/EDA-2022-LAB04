@@ -1,24 +1,33 @@
 public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
     Node<E> first;
-    int tamanio;
+    int tamano;
 
     public DoubleLinkedList() {
-
+    	this.first = null;
+    	this.tamano = 0; 
     }
     
     @Override
     public boolean isEmpty() {
-    	return false;
+    	return this.first == null;
     }
 
     @Override
     public void insertFirst(E x) {
-    	
+    	this.first = new Node<E>(x, null, this.first);
+    	tamano++;
     }
 
     @Override
     public void insertLast(E x) {
-    	
+        if (this.isEmpty()) {
+            insertFirst(x);
+        } else {
+            Node<E> aux = this.first;
+            for (; aux.getNext() != null; aux = aux.getNext());
+            aux.setNext(new Node<E>(x));
+        }
+        tamano++;
     }
 
     @Override
