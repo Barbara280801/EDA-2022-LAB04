@@ -20,4 +20,12 @@ public class Test {
         System.out.println(list);
     }
 
+    public static LinkedList<Integer> generarPeorCaso(int t) {
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int i = 0; i < t; i++) {
+            list.insertFirst(i + 1);
+        }
+        return list;
+    }
+
 }
