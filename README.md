@@ -85,6 +85,12 @@ Se Implemento el metodo [insertionSort](https://github.com/Barbara280801/EDA-202
 	
 	
     * Ejercicio 2: Algoritmo de Inserción en Lista Enlazada Doble
+	
+	
+    * Adicional : Ejecución del ejercicio de Clases<br>
+	![Grafica 01](graficas/pDeClase.png)
+	<br>
+	
 ---
 
 II. SOLUCIÓN DEL CUESTIONARIO
