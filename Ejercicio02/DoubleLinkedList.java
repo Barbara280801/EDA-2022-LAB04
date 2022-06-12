@@ -53,22 +53,32 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
         }
     }
 
-    @Override
     public void insert(E x, int p) {
-    	
-    }
-
-    public void remove(int ind) {
-
+        if (this.isEmpty() || p == 0) {
+            insertFirst(x);
+        } else {
+            Node<E> aux = this.get(p-1);
+            Node<E> nuevo = new Node<E>(x, aux, aux.getNext());
+            aux.getNext().setPreviuos(nuevo);
+            aux.setNext(nuevo);
+        }
+        tamano++;
     }
 
     public Node<E> get(int ind) {
-    	return null;
+    	Node<E> aux = this.raiz;
+        for (int i = 0; i < ind; i++)
+            aux = aux.getNext();
+        return aux;
     }
 
     @Override
     public String toString() {
-    	return "";
+    	String str = "";
+        for (Node<E> aux = this.raiz; aux != null; aux = aux.getNext()) {
+            str += aux.toString() + ", ";
+        }
+        return str;
     }
 
 }
