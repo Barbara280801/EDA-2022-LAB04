@@ -13,7 +13,18 @@ public class Test {
 
         System.out.println("Inicio de simulacion: " + dateFormat.format(new Date()));
         simulacionInicio = System.nanoTime();
+        for (int i = 2; i <= CANTIDAD; i++) {
 
+            LinkedList<Integer> list = generarPeorCaso(i);
+            insercionInicio = System.nanoTime();
+            insertionSort(list);
+            insercionFin = System.nanoTime();
+            insercionTotal = insercionFin - insercionInicio;
+            archivo.print(i);
+            archivo.print(" ");
+            archivo.print(insercionTotal);
+            archivo.println();
+        }
     }
 
     public static <E extends Comparable<E>> void insertionSort(LinkedList<E> list) {
