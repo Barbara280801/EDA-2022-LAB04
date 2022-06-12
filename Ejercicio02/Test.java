@@ -27,6 +27,16 @@ public class Test {
 		long simulacionTotal = simulacionFin - simulacionInicio;
 		System.out.println("Cantidad de datos: " + CANTIDAD);
 		System.out.println("Fin de simulacion: " + TimeUnit.NANOSECONDS.toSeconds(simulacionTotal) + " segundos");
+
+		JavaPlot p = new JavaPlot();
+		p.addPlot("\"/home/carlo/eda/EDA-2022-LAB04/insercion.txt\" with lines");
+		p.setTitle("EDA - EJERCICIO 02 : ORDENAMIENTO DE LISTA ENLAZADA DOBLE");
+		GNUPlotParameters params = p.getParameters();
+		params.set("xlabel", "'Cantidad de datos'");
+		params.set("ylabel", "'Tiempo en nanosegundos'");
+		params.set("grid");
+		p.setParameters(params);
+		p.plot();
 	}
 	public static <E extends Comparable<E>> long insertionSort (DoubleLinkedList<E> list){
 		long nano_startTime = System.nanoTime();
