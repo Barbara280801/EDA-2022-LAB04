@@ -35,7 +35,6 @@ public class Test {
         p.addPlot("\"/home/franco/eda/prueba/listas/src/insercion.dat\" with lines");
         p.setTitle("EDA - EJERCICIO 01 : ORDENAMIENTO DE LISTA ENLAZADA SIMPLE");
         GNUPlotParameters params = p.getParameters();
-        params.set("title", "'EDA-LAB 04-EJERCICIO 1'");
         params.set("xlabel", "'Cantidad de datos'");
         params.set("ylabel", "'tiempo en nanosegundos'");
         params.set("grid");
