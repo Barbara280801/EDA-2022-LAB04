@@ -7,6 +7,26 @@ public class Test {
 	public static void main (String[] args) throws Exception {
 		final int CANTIDAD = 10000;
 		long simulacionInicio, simulacionFin;
+
+		ArrayList<DoubleLinkedList<Integer>> casos = new ArrayList<DoubleLinkedList<Integer>>();
+		String archivoInsercion = "insercion.txt";
+		PrintWriter oS = new PrintWriter(archivoInsercion);
+
+		for (int n = 2; n <= CANTIDAD; n++) {
+			casos.add(generarPeorCaso(n));
+		}
+
+		simulacionInicio = System.nanoTime();
+		Iterator<DoubleLinkedList<Integer>> puntero = casos.iterator();
+		while(puntero.hasNext()){
+			oS.println(String.valueOf(insertionSort(puntero.next())));
+		}
+		simulacionFin = System.nanoTime();
+		oS.close();
+
+		long simulacionTotal = simulacionFin - simulacionInicio;
+		System.out.println("Cantidad de datos: " + CANTIDAD);
+		System.out.println("Fin de simulacion: " + TimeUnit.NANOSECONDS.toSeconds(simulacionTotal) + " segundos");
 	}
 	public static <E extends Comparable<E>> long insertionSort (DoubleLinkedList<E> list){
 		long nano_startTime = System.nanoTime();
