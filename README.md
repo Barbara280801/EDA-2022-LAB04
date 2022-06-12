@@ -36,7 +36,7 @@
 </tr>
 <tr><td colspan="3">INTEGRANTE(s):
 <ul>
-<li>Cárdenas Martines Franco Luchiano - fcardenasm@unsa.edu.pe</li>
+<li>Cárdenas Martínez Franco Luchiano - fcardenasm@unsa.edu.pe</li>
 <li>Carrillo Daza Barbara Rubi - bcarrillo@unsa.edu.pe</li>
 <li>Diaz Portilla Carlo Rodrigo - cdiazpor@unsa.edu.pe</li>
 <li>Hancco Condori Bryan Orlando - bhanccoco@unsa.edu.pe</li>
