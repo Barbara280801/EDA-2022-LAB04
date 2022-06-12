@@ -69,7 +69,7 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     ```
 * Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las clases de teoría
     * Ejercicio 1: Algoritmo de Inserción en Lista Enlazada Simple	
-	![Esta es una imagen de ejemplo](Gráficas/Grafica p1.png)
+	![Grafica 01](graficas/p1.png)
     * Ejercicio 2: Algoritmo de Inserción en Lista Enlazada Doble
 ---
 
