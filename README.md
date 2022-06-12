@@ -68,8 +68,12 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 	    └───Ejercicio02
     ```
 * Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las clases de teoría
-    * Ejercicio 1: Algoritmo de Inserción en Lista Enlazada Simple	
+    * Ejercicio 1: Algoritmo de Inserción en Lista Enlazada Simple
+	- Se Implemento el metodo [insertionSort](https://sourceforge.net/projects/gnujavaplot/files/latest/download "gnuplot") para Listas enlazadas simples, este metodo aumenta su complejidad debido a quede para referenciar al elemento anterior se debe lllamar al metodo [get](https://sourceforge.net/projects/gnujavaplot/files/latest/download "gnuplot") que tiene un orden n, esto genera un incremento en la complejidad del algoritmo , es por ello que se obtienen tiempos de ejecucion grandes en comparacion de las Listas doblemente enlazadas.
+
 	![Grafica 01](graficas/p1.png)
+	
+	
     * Ejercicio 2: Algoritmo de Inserción en Lista Enlazada Doble
 ---
 
@@ -77,22 +81,22 @@ II. SOLUCIÓN DEL CUESTIONARIO
 
 * ¿Cómo ejecutaría sus implementaciones desde terminal(consola)?¿Cómo lo haría desde la terminal?
     - Primero se instala [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.3/ "gnuplot") en el sistema del enlace o de la siguiente manera:
-	```sh
-	sudo apt install gnuplot
-	```
+      ```sh
+      sudo apt install gnuplot
+      ```
     - Luego descargar [JavaPlot](https://sourceforge.net/projects/gnujavaplot/files/latest/download "gnuplot") del enlace y descomprimirlo en un direcctorio a elección.
     - Finalizar las respectivas implementaciones sin olvidad agregar las respectivas importaciones
-	```java
-	import com.panayotis.gnuplot.JavaPlot;
-	```
-	- Compilar la implententacion  	
-	```sh
-	javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java
-	```
+      ```java
+      import com.panayotis.gnuplot.JavaPlot;
+      ```
+    - Compilar la implententacion  	
+      ```sh
+      javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java
+      ```
     - Finalmente ejecutar
-	```sh
-	java -cp RUTA_A_JAVAPLOT/dist/JavaPlot.jar:. prueba
-	```
+      ```sh
+      java -cp RUTA_A_JAVAPLOT/dist/JavaPlot.jar:. prueba
+      ```
 ---
 
 III. CONCLUSIONES
