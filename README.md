@@ -96,7 +96,7 @@ Se Implemento el metodo [insertionSort](https://github.com/Barbara280801/EDA-202
 II. SOLUCIÓN DEL CUESTIONARIO
 
 * ¿Cómo ejecutaría sus implementaciones desde terminal(consola)?¿Cómo lo haría desde la terminal?
-    - Primero se instala [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.3/ "gnuplot") en el sistema del enlace o de la siguiente manera:
+    - Primero se instala [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.3/ "gnuplot") en el sistema desde el enlace o de la siguiente manera:
       ```sh
       sudo apt install gnuplot
       ```
