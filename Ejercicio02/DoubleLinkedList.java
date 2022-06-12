@@ -23,8 +23,7 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
         if (this.isEmpty()) {
             insertFirst(x);
         } else {
-            Node<E> aux = this.raiz;
-            for (; aux.getNext() != null; aux = aux.getNext());
+            Node<E> aux = get(tamano-1);
             aux.setNext(new Node<E>(x, null, aux));
         }
         tamano++;
