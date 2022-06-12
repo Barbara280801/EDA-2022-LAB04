@@ -83,8 +83,8 @@ II. SOLUCIÓN DEL CUESTIONARIO
     - Finalizar las respectivas implementaciones sin olvidad agregar las respectivas importaciones
 	```java
 	import com.panayotis.gnuplot.JavaPlot;
-    	```
-    - Compilar la implententacion  	
+	```
+	- Compilar la implententacion  	
 	```sh
 	javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java
 	```
