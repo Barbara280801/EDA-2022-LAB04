@@ -25,6 +25,19 @@ public class Test {
             archivo.print(insercionTotal);
             archivo.println();
         }
+        archivo.close();
+        simulacionFin = System.nanoTime();
+        simulacionTotal = simulacionFin - simulacionInicio;
+        System.out.println("Fin de simulacion: " + TimeUnit.NANOSECONDS.toMinutes(simulacionTotal) + "min");
+        JavaPlot p = new JavaPlot();
+        p.addPlot("\"/home/franco/eda/prueba/listas/src/insercion.dat\" with lines");
+        p.setTitle("EDA - EJERCICIO 01 : ORDENAMIENTO DE LISTA ENLAZADA SIMPLE");
+        GNUPlotParameters params = p.getParameters();
+        params.set("xlabel", "'Cantidad de datos'");
+        params.set("ylabel", "'tiempo en nanosegundos'");
+        params.set("grid");
+        p.setParameters(params);
+        p.plot();
     }
 
     public static <E extends Comparable<E>> void insertionSort(LinkedList<E> list) {
