@@ -14,7 +14,14 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
 
     @Override
     public void insertFirst(E x) {
-    	this.raiz = new Node<E>(x, this.raiz);
+    	Node<E> node = new Node<E>(x);
+    	if (isEmpty()) {
+    		this.raiz = node;
+    	}else {
+    		node.setNext(this.raiz);
+    		this.raiz.setPrevious(node);
+    		this.raiz = node;
+    	}
     	tamano++;
     }
 
