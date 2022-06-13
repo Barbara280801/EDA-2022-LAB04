@@ -48,14 +48,14 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
         if(ind < tamano) {
             if(ind == 0) {
                 this.raiz = this.raiz.getNext();
-            	this.raiz.setPreviuos(null);
+            	this.raiz.setPrevious(null);
             }
             else {
-            	this.get(ind).setPreviuos(null);
+            	this.get(ind).setPrevious(null);
                 Node<E> anterior = this.get(ind-1);
                 anterior.setNext(this.get(ind).getNext());
                 if (anterior.getNext() != null)
-                	anterior.getNext().setPreviuos(anterior);
+                	anterior.getNext().setPrevious(anterior);
             }
             tamano--;
         }
@@ -71,7 +71,7 @@ public class DoubleLinkedList<E extends Comparable<E>> implements TDAList<E> {
         else {
         	Node<E> aux = this.get(p-1);
             Node<E> nuevo = new Node<E>(x, aux.getNext(), aux);
-            aux.getNext().setPreviuos(nuevo);
+            aux.getNext().setPrevious(nuevo);
             aux.setNext(nuevo);
         }
         tamano++;
