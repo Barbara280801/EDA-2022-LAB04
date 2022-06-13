@@ -86,6 +86,28 @@ Se Implemento el metodo [insertionSort](https://github.com/Barbara280801/EDA-202
 	
     * **Ejercicio 2:** Algoritmo de Inserción en Lista Enlazada Doble
 	
+	- Para este ejercicio se creo una estructura de datos <code>DoubleLinkedList</code> donde cada <code>Node</code> tiene un next y previous node.
+      - Iniciamos creando el algoritmo de inserción de una lista enlazada doble:
+
+      ```java
+      long nano_startTime = System.nanoTime();
+      for (Node<E> key = list.get(0).getNext(); key != null; key = key.getNext()){
+            Node<E> i = key.getPrevious();
+            E aux = key.getData();
+            while(i != null && i.getData().compareTo(i.getNext().getData()) == 1){
+                    i.getNext().setData(i.getData());
+                    i.setData(aux);
+                    i = i.getPrevious();
+            }
+      }
+      long nano_endTime = System.nanoTime();
+      return nano_endTime - nano_startTime;
+      ```
+
+      - En este algoritmo se usa la ventaja de poder retroceder <code>getPrevious()</code> que tienen las listas dobles enlazadas.
+      - Despues de obtener los datos de cada peor caso generado en un archivo <code>insercion.txt</code> obtenemos la siguiente gráfica:
+	
+	![Grafica 02](graficas/p2.jpeg)
 	
     * **Adicional:** Ejecución del ejercicio de Clases<br>
 	![Grafica 01](graficas/pDeClase.png)
