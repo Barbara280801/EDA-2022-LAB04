@@ -75,7 +75,7 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 	│   └── Test.java
 	└── README.md
     ```
-    Cada ejercicio tiene su respectivo test, se debera compilar y ejecutar como se indica en el cuestionario (Nota: Para la generacion de el archivo de texto se usaron rutas relativas).	
+    Cada ejercicio tiene su respectivo test, se debera compilar y ejecutar como se indica en el cuestionario (Nota: Para la generación y lectura del archivo de texto que contiene los datos de ejecucion se usaron rutas relativas).	
 	
 * Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las clases de teoría
     * **Ejercicio 1:** Algoritmo de Inserción en Lista Enlazada Simple<br><br>
