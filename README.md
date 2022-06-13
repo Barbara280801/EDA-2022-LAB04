@@ -82,7 +82,7 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 Se Implemento el metodo [insertionSort](https://github.com/Barbara280801/EDA-2022-LAB04/blob/9a1908f1be1ad50ae8bc1b18f8b4becc1401b562/Ejercicio01/Test.java#L46 "insertionSort") para Listas enlazadas simples, este metodo aumenta su complejidad debido a quede para referenciar al elemento anterior se debe lllamar al metodo [get](https://github.com/Barbara280801/EDA-2022-LAB04/blob/9a1908f1be1ad50ae8bc1b18f8b4becc1401b562/Ejercicio01/Test.java#L61 "get") que tiene un orden n, esto genera un incremento en la complejidad del algoritmo , es por ello que se obtienen tiempos de ejecucion grandes en comparacion de las Listas doblemente enlazadas.
      
 	```java	
-   	public static <E extends Comparable<E>> void insertionSort(LinkedList<E> list) {
+        public static <E extends Comparable<E>> void insertionSort(LinkedList<E> list) {
              E key;
              int i;
              for (int j = 1; j < list.tamanio; j = j + 1) {
