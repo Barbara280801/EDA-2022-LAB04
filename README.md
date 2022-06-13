@@ -75,7 +75,7 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 	│   └── Test.java
 	└── README.md
     ```
-    Cada ejercicio tiene su respectivo test que se debera compilar y ejecutar.	
+    Cada ejercicio tiene su respectivo test, se debera compilar y ejecutar como se indica en el cuestionario.	
 	
 * Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las clases de teoría
     * **Ejercicio 1:** Algoritmo de Inserción en Lista Enlazada Simple<br><br>
@@ -143,9 +143,9 @@ II. SOLUCIÓN DEL CUESTIONARIO
       ```java
       import com.panayotis.gnuplot.JavaPlot;
       ```
-    - Compilar la implententacion  	
+    - Compilar la implententacion , incluyendo las clases del proyecto 	
       ```sh
-      javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java
+      javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java [class1] [class2] ...
       ```
     - Finalmente ejecutar
       ```sh
