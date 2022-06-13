@@ -29,7 +29,7 @@ public class Test {
 		System.out.println("Fin de simulacion: " + TimeUnit.NANOSECONDS.toSeconds(simulacionTotal) + " segundos");
 
 		JavaPlot p = new JavaPlot();
-		p.addPlot("\"/home/carlo/eda/EDA-2022-LAB04/insercion.txt\" with lines");
+		p.addPlot("\"/insercion.txt\" with lines");
 		p.setTitle("EDA - EJERCICIO 02 : ORDENAMIENTO DE LISTA ENLAZADA DOBLE");
 		GNUPlotParameters params = p.getParameters();
 		params.set("xlabel", "'Cantidad de datos'");
