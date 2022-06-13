@@ -95,7 +95,8 @@ Se Implemento el metodo [insertionSort](https://github.com/Barbara280801/EDA-202
                  list.get(i + 1).setDato(key);
              }
          }
-         ```
+	```
+	
 	![Grafica 01](graficas/p1.png)
 	
 	
