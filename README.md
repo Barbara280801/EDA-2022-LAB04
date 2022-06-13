@@ -154,7 +154,13 @@ II. SOLUCIÓN DEL CUESTIONARIO
 ---
 
 III. CONCLUSIONES
-    
+	
+- En las listas enlazadas simples cada nodo tiene la referencia unicamente al siguiente nodo, haciendo imposible el trabajo de poder retroceder. Por otro lado, también tenemos dificultad de acceder a sus elementos, ya que cada vez que queremos acceder a un elemento tenemos que iterar hasta llegar al elemento que deseamos, en consecuencia, puede afectar algoritmos en los que tenemos que acceder precisamente a un elemento. 
+	
+- En las listas enlazadas dobles cada nodo tiene una referencia al nodo siguiente y al nodo anterior, mejorando el rendimiento de algoritmos en los que necesitamos ir atrás como el algoritmo de inserción.
+	
+- Dependiendo de la estructura de datos el algoritmo puede funcionar de una manera optima y en menos tiempo de lo que puede demorar con otro tipo de estructura de datos.
+	
 ---
     
 ## RETROALIMENTACIÓN GENERAL
