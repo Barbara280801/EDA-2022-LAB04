@@ -75,7 +75,7 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 	│   └── Test.java
 	└── README.md
     ```
-    Cada ejercicio tiene su respectivo test, se debera compilar y ejecutar como se indica en el cuestionario (Nota: Para la generación y lectura del archivo de texto que contiene los datos de ejecucion se usaron rutas relativas).	
+    Cada ejercicio tiene su respectivo test, se debera compilar y ejecutar como se indica en el [cuestionario](#item1) (Nota: Para la generación y lectura del archivo de texto que contiene los datos de ejecucion se usaron rutas relativas).	
 	
 * Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las clases de teoría
     * **Ejercicio 1:** Algoritmo de Inserción en Lista Enlazada Simple<br><br>
@@ -132,7 +132,7 @@ Se Implemento el metodo [insertionSort](https://github.com/Barbara280801/EDA-202
 ---
 
 II. SOLUCIÓN DEL CUESTIONARIO
-
+<a name="item1"></<>
 * ¿Cómo ejecutaría sus implementaciones desde terminal(consola)?¿Cómo lo haría desde la terminal?
     - Primero se instala [gnuplot](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.3/ "gnuplot") en el sistema desde el enlace o de la siguiente manera:
       ```sh
